@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IELTS Writing Task 2 Test Book</title>
+<style>
+:root{
+  --royal:#2B53A7; --sky:#3DB9EA; --sky-lt:#7ED6F7; --mid:#1C80C8; --navy:#1B2E5C; --slate:#5B6B87;
+  --bg:#FFFFFF; --surface:#FFFFFF; --pale:#EAF1FB; --pale2:#D9E6F7; --ink:#141414; --muted:#5B6B87;
+  --title:#2B53A7; --border:#D9E6F7; --line:#E4ECF7; --card:#2B53A7; --on-card:#FFFFFF; --accent-text:#1C80C8;
+  --font:Arial, "Helvetica Neue", Helvetica, "Liberation Sans", sans-serif;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1530; --surface:#132045; --pale:#1A2A57; --pale2:#22356A; --ink:#EEF3FB; --muted:#A3B3CF;
+    --title:#8FB2F0; --border:#24376B; --line:#1E2E5C; --card:#2B53A7; --on-card:#FFFFFF; --accent-text:#7ED6F7; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1530; --surface:#132045; --pale:#1A2A57; --pale2:#22356A; --ink:#EEF3FB; --muted:#A3B3CF;
+  --title:#8FB2F0; --border:#24376B; --line:#1E2E5C; --card:#2B53A7; --on-card:#FFFFFF; --accent-text:#7ED6F7; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16.5px;line-height:1.5}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{margin:0;font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:var(--ink)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(160deg,#2B53A7 0%,#2A5DB5 55%,#1C80C8 100%);padding:22px 0 0}
+.hero .bar{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.hero .mark{font-weight:700;font-size:.82rem;line-height:1.35;text-transform:uppercase}
+.hero .mark i{display:block;font-weight:400;font-size:.76rem;text-transform:none;color:var(--sky-lt)}
+.burger{display:flex;align-items:center;gap:18px}
+.pill-info{background:#fff;color:var(--royal);border-radius:20px;padding:5px 22px;font-size:.75rem;font-weight:700}
+.lines{width:48px;display:grid;gap:5px}
+.lines span{height:3px;background:var(--sky);border-radius:2px}
+.hero .center{text-align:center;padding:34px 0 112px;position:relative;z-index:1}
+.badge{display:inline-block;background:var(--sky);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border-radius:12px}
+.hero h1{margin:22px 0 14px;font-size:clamp(1.9rem,5vw,3.2rem);font-weight:700;letter-spacing:.01em;text-transform:uppercase;line-height:1.1}
+.hero .sub{margin:0;color:var(--sky-lt);font-size:clamp(1rem,2.2vw,1.3rem)}
+.plus{position:absolute;color:var(--sky-lt);font-weight:700;line-height:1;user-select:none;pointer-events:none}
+.plus.w{color:#fff}
+@media (max-width:700px){.plus{display:none}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:110px;z-index:0}
+.wave svg{width:100%;height:100%;display:block}
+.cand-card{position:relative;z-index:2;margin:-62px auto 0;max-width:440px;background:var(--surface);border-radius:14px;padding:14px 22px;text-align:center;box-shadow:0 8px 24px rgba(27,46,92,.18)}
+.cand-card label{display:block;font-size:.85rem;color:var(--ink)}
+.cand-card input{width:100%;margin-top:4px;border:none;border-bottom:2px solid var(--pale2);background:transparent;text-align:center;font-weight:700;color:var(--title);padding:4px 2px}
+.cand-card input:focus{outline:none;border-bottom-color:var(--sky)}
+
+.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:28px;padding-top:30px;padding-bottom:40px}
+@media (max-width:860px){.layout{grid-template-columns:1fr}}
+
+/* index */
+aside.index{align-self:start;position:sticky;top:calc(16px + env(safe-area-inset-top,0px));max-height:calc(100vh - 32px);display:flex;flex-direction:column;background:var(--pale);border-radius:16px;overflow:hidden}
+@media (max-width:860px){aside.index{position:static;max-height:none}}
+.index details{display:flex;flex-direction:column;min-height:0}
+.index summary{list-style:none;padding:16px 18px 6px;font-weight:700;color:var(--title);font-size:1.1rem;display:flex;justify-content:space-between;align-items:baseline;cursor:pointer}
+.index summary::-webkit-details-marker{display:none}
+.index summary .count{font-weight:400;color:var(--muted);font-size:.85rem}
+.topics{display:flex;flex-wrap:wrap;gap:6px;padding:10px 18px 4px}
+.topics button{border:none;background:var(--surface);color:var(--title);border-radius:20px;padding:5px 13px;font-size:.82rem;font-weight:700}
+.topics button[aria-pressed="true"]{background:var(--royal);color:#fff}
+.random{margin:10px 18px 6px;border:none;background:var(--sky);color:#fff;border-radius:12px;padding:8px;font-size:.88rem;font-weight:700}
+.random:hover{background:var(--mid)}
+ol.qlist{list-style:none;margin:0;padding:6px 14px 14px 10px;overflow:auto;max-height:60vh}
+@media (min-width:861px){ol.qlist{max-height:none;flex:1}}
+.qlist li button{display:grid;grid-template-columns:38px 1fr auto;gap:8px;align-items:center;width:100%;text-align:left;background:transparent;border:none;border-radius:12px;padding:8px;font-size:.88rem;line-height:1.35}
+.qlist li button:hover{background:var(--surface)}
+.qlist li button[aria-current="true"]{background:var(--royal);color:#fff}
+.qlist .qid{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--royal);color:#fff;font-weight:700;font-size:.78rem}
+.qlist li button[aria-current="true"] .qid{background:#fff;color:var(--royal)}
+.qlist .qtext{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.qlist .done:empty{display:none}
+.qlist .done{background:var(--sky);color:#fff;border-radius:10px;padding:2px 7px;font-weight:700;font-size:.78rem}
+
+/* paper */
+.paper{background:transparent}
+.paper-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}
+.paper-head h2{margin:2px 0 0;font-size:clamp(1.6rem,3.4vw,2.1rem);font-weight:700;color:var(--title);line-height:1.15}
+.icon-circle{flex:none;width:64px;height:64px;border-radius:50%;background:var(--pale);display:grid;place-items:center;color:var(--royal)}
+:root[data-theme="dark"] .icon-circle{color:var(--sky-lt)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .icon-circle{color:var(--sky-lt)}}
+.rubric{font-size:.95rem;color:var(--muted);margin:0 0 12px}
+.prompt{position:relative;background:var(--card);color:var(--on-card);border-radius:16px;padding:26px 28px;margin:0 0 14px;font-size:1.08rem;line-height:1.6}
+.prompt p{margin:0 0 .6em;max-width:68ch}
+.prompt p:last-child{margin-bottom:0}
+.prompt .ask{font-weight:700;color:var(--sky-lt)}
+.prompt .tag{position:absolute;top:-12px;right:22px;background:var(--sky);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:12px}
+
+.sheet-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:28px 0 10px}
+.timer{display:flex;align-items:center;gap:8px}
+.timer output{display:inline-grid;place-items:center;min-width:92px;height:42px;padding:0 12px;border-radius:12px;background:var(--royal);color:#fff;font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums}
+.timer output.low{background:var(--sky)}
+.btn{border:2px solid var(--royal);background:transparent;color:var(--title);border-radius:20px;padding:7px 16px;font-weight:700;font-size:.88rem}
+:root[data-theme="dark"] .btn{border-color:var(--title)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{border-color:var(--title)}}
+.btn:hover{background:var(--pale)}
+.btn.primary{background:var(--royal);border-color:var(--royal);color:#fff;padding:10px 22px;font-size:.95rem}
+.btn.primary:hover{background:var(--navy);border-color:var(--navy)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.wc{margin-left:auto;font-size:.92rem;color:var(--muted)}
+.wc strong{color:var(--title);font-size:1.1rem;font-variant-numeric:tabular-nums}
+.wc.under strong{color:var(--mid)}
+
+.sheet{position:relative;border:2px solid var(--border);border-radius:16px;background:var(--surface);overflow:hidden}
+.sheet::before{content:"";position:absolute;top:0;bottom:0;left:0;width:8px;background:var(--sky);pointer-events:none}
+.sheet textarea{display:block;width:100%;min-height:520px;resize:vertical;border:none;background:transparent;padding:6px 20px 30px 30px;font-size:1.02rem;line-height:32px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,var(--line) 31px,var(--line) 32px);background-attachment:local;background-position:0 6px}
+.sheet textarea:focus{outline:none}
+.sheet:focus-within{border-color:var(--sky)}
+.saved{font-size:.82rem;color:var(--muted);margin:8px 0 0;font-style:italic}
+
+.submit-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:22px}
+.submit-row .note{font-size:.88rem;color:var(--muted);flex:1;min-width:220px;margin:0}
+
+/* marking */
+.marking{margin-top:36px;padding-top:28px;border-top:2px solid var(--pale2)}
+.status{display:flex;gap:12px;align-items:center;background:var(--pale);border-radius:14px;padding:14px 18px;color:var(--title);font-weight:700}
+.spinner{width:22px;height:22px;border:3px solid var(--pale2);border-top-color:var(--sky);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spinner{animation-duration:3s}}
+.err{color:var(--mid);font-weight:700}
+
+.verdict{display:grid;grid-template-columns:220px 1fr;gap:22px;align-items:stretch;margin-bottom:22px}
+@media (max-width:620px){.verdict{grid-template-columns:1fr}}
+.stamp{background:var(--royal);color:#fff;border-radius:16px;padding:20px;display:flex;align-items:center;gap:14px}
+.stamp .num{display:grid;place-items:center;width:84px;height:84px;flex:none;border-radius:50%;background:#fff;color:var(--royal);font-size:2rem;font-weight:700}
+.stamp .lbl{font-size:.95rem;line-height:1.3}
+.stamp .lbl b{display:block;font-size:1.25rem}
+.verdict h3{margin:0 0 6px;font-size:1.5rem;color:var(--title)}
+.verdict p{margin:0;max-width:64ch}
+.verdict .meta{color:var(--muted);font-size:.85rem;margin-top:8px}
+
+.crit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:720px){.crit-grid{grid-template-columns:1fr}}
+.crit{background:var(--pale);border-radius:16px;padding:20px 22px}
+.crit.dark{background:var(--card);color:var(--on-card)}
+.crit .head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.crit .b{display:grid;place-items:center;width:48px;height:48px;flex:none;border-radius:50%;background:var(--royal);color:#fff;font-size:1.3rem;font-weight:700}
+.crit.dark .b{background:#fff;color:var(--royal)}
+.crit h4{margin:0;font-size:1rem;color:var(--title);line-height:1.25}
+.crit.dark h4{color:var(--sky-lt)}
+.crit h4 small{display:block;font-size:.75rem;color:var(--muted);font-weight:700;letter-spacing:.04em}
+.crit.dark h4 small{color:#C9DAF5}
+.crit p{margin:0 0 8px}
+.crit .cols{display:grid;gap:10px;margin-top:8px}
+.crit .cols h5{margin:0 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--accent-text)}
+.crit.dark .cols h5{color:var(--sky-lt)}
+.crit ul{margin:0;padding-left:1.1em;font-size:.93rem}
+.crit li{margin-bottom:4px}
+.crit li::marker{color:var(--sky)}
+.crit details{margin-top:10px;font-size:.88rem}
+.crit details summary{cursor:pointer;font-weight:700;color:var(--accent-text)}
+.crit.dark details summary{color:var(--sky-lt)}
+.crit details p{margin-top:6px;opacity:.85}
+
+.fixes,.next{margin-top:22px;background:var(--surface);border:2px solid var(--pale2);border-radius:16px;padding:18px 22px}
+.fixes h4,.next h4{font-size:1.15rem;color:var(--title);margin:0 0 8px}
+.fix{padding:10px 0;border-top:1px solid var(--line);font-size:.95rem}
+.fix:first-of-type{border-top:none}
+.fix .o{text-decoration:line-through;text-decoration-color:var(--sky);text-decoration-thickness:2px;color:var(--muted)}
+.fix .s{color:var(--accent-text);font-weight:700}
+.fix .n{display:block;color:var(--muted);font-size:.85rem;margin-top:2px}
+.next ol{padding-left:1.3em;margin:0}
+.next li::marker{color:var(--sky);font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.disclaimer{font-size:.8rem;color:var(--muted);font-style:italic;margin-top:18px;max-width:72ch}
+
+/* manual marking */
+.manual{margin-top:28px;background:var(--pale);border-radius:16px;padding:16px 20px}
+.manual summary{cursor:pointer;font-weight:700;color:var(--title)}
+.manual .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:14px}
+.manual label{display:block;font-size:.85rem;font-weight:700;margin-bottom:4px}
+.manual select{width:100%;padding:7px 10px;border:2px solid var(--pale2);border-radius:10px;background:var(--surface)}
+.manual .res{margin-top:12px;font-size:1.1rem;font-weight:700;color:var(--title)}
+
+/* reference */
+.ref{margin-top:16px}
+.ref details{background:var(--pale);border-radius:16px;padding:16px 20px}
+.ref summary{cursor:pointer;font-weight:700;color:var(--title)}
+.ref .tbl{overflow-x:auto;margin-top:12px}
+.ref table{border-collapse:separate;border-spacing:0;width:100%;min-width:720px;font-size:.85rem;background:var(--surface);border-radius:12px;overflow:hidden}
+.ref th,.ref td{border-bottom:1px solid var(--line);padding:9px;vertical-align:top;text-align:left}
+.ref th{background:var(--royal);color:#fff}
+.ref td:first-child{font-weight:700;color:var(--title);text-align:center;width:48px}
+
+footer.foot{border-top:1px solid var(--pale2)}
+footer.foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;padding-bottom:20px;font-size:.75rem;color:var(--muted);text-transform:uppercase}
+footer.foot .rule{display:flex;align-items:center;gap:10px;color:var(--sky);font-weight:700;font-size:1rem}
+footer.foot .rule::after{content:"";width:48px;height:3px;background:var(--sky);border-radius:2px}
+.hidden{display:none !important}
+</style>
+</head>
+<body>
+<header class="hero">
+  <span class="plus" aria-hidden="true" style="left:8%;top:150px;font-size:56px">+</span>
+  <span class="plus w" aria-hidden="true" style="left:5%;top:300px;font-size:44px">+</span>
+  <span class="plus" aria-hidden="true" style="right:12%;top:95px;font-size:44px">+</span>
+  <span class="plus w" aria-hidden="true" style="right:8%;top:270px;font-size:52px">+</span>
+  <div class="wrap bar">
+    <div class="mark">IELTS Writing Task 2<i>Practice test book with band marking</i></div>
+    <div class="burger" aria-hidden="true"><span class="pill-info">INFO</span><span class="lines"><span></span><span></span><span></span></span></div>
+  </div>
+  <div class="wrap center">
+    <span class="badge">71 questions &nbsp;•&nbsp; 40 minutes</span>
+    <h1>IELTS Writing Task 2 Test Book</h1>
+    <p class="sub">Choose a question, write your essay, and get your band score.</p>
+  </div>
+  <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path d="M0,70 C280,10 560,0 860,30 C1120,56 1300,40 1440,20 L1440,110 L0,110 Z" fill="#3DB9EA" opacity=".55"/><path d="M0,95 C320,40 640,35 940,60 C1180,80 1330,72 1440,55 L1440,110 L0,110 Z" fill="var(--bg)"/></svg></div>
+</header>
+<div class="wrap"><div class="cand-card"><label for="cand">Candidate name</label><input id="cand" type="text" autocomplete="name" placeholder="Type your name"></div></div>
+
+<div class="wrap layout">
+  <aside class="index" aria-label="Question index">
+    <details id="indexDetails" open>
+      <summary><span>Choose a question</span><span class="count" id="qcount"></span></summary>
+      <div class="topics" role="group" aria-label="Topic" id="topics"></div>
+      <button class="random" id="randomBtn" type="button">Give me a random question</button>
+      <ol class="qlist" id="qlist"></ol>
+    </details>
+  </aside>
+
+  <main>
+    <article class="paper">
+      <div class="paper-head">
+        <div><p class="eyebrow" id="qTopic"></p><h2 id="qTitle">Writing Task 2</h2></div>
+        <div class="icon-circle" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M15.2 2.6a1.5 1.5 0 0 1 2.1 0l4.1 4.1a1.5 1.5 0 0 1 0 2.1l-1.6 1.6-6.2-6.2zM12.4 5.4l6.2 6.2-1.3 4.8a2 2 0 0 1-1.3 1.4L4.6 21.4l5.3-5.3a2 2 0 1 0-1.4-1.4l-5.3 5.3L6.8 8.6a2 2 0 0 1 1.4-1.3z"/></svg></div>
+      </div>
+      <p class="rubric">You should spend about 40 minutes on this task. Write about the following topic:</p>
+      <div class="prompt" id="prompt"></div>
+      <p class="rubric">Give reasons for your answer and include any relevant examples from your own knowledge or experience.<br>Write at least 250 words.</p>
+
+      <div class="sheet-bar">
+        <div class="timer">
+          <output id="clock" aria-live="off">40:00</output>
+          <button class="btn" id="timerBtn" type="button">Start timer</button>
+          <button class="btn" id="resetBtn" type="button">Reset</button>
+        </div>
+        <div class="wc" id="wc"><strong id="wcNum">0</strong> words</div>
+      </div>
+      <div class="sheet">
+        <textarea id="essay" spellcheck="false" aria-label="Your answer" placeholder="Write your essay here…"></textarea>
+      </div>
+      <p class="saved" id="saved">Your draft is saved on this device as you type.</p>
+
+      <div class="submit-row">
+        <button class="btn primary" id="gradeBtn" type="button">Submit for marking</button>
+        <p class="note" id="gradeNote">Claude marks your essay against the four Task 2 criteria in your band guide: Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy.</p>
+      </div>
+
+      <section class="marking hidden" id="marking" aria-live="polite"></section>
+
+      <details class="manual" id="manual">
+        <summary>Mark it yourself (teacher or self-assessment)</summary>
+        <div class="grid" id="manualGrid"></div>
+        <p class="res" id="manualRes"></p>
+      </details>
+
+      <section class="ref">
+        <details>
+          <summary>Band descriptors used for marking</summary>
+          <div class="tbl"><table id="refTable"></table></div>
+          <p class="disclaimer">Paraphrased from the official IELTS Writing Task 2 band descriptors (May 2023). Each criterion carries 25% of the Task 2 score, and the task band is the average of the four criterion bands. Band 0: did not attend or attempt the question, wrote entirely in a language other than English, or the answer is proven to be totally memorised.</p>
+        </details>
+      </section>
+    </article>
+  </main>
+</div>
+<footer class="foot"><div class="wrap"><span>IELTS Writing Task 2  |  Practice test book  |  Band descriptors May 2023</span><span class="rule">Task 2</span></div></footer>
+
+<script>
+/* ---------- Questions ---------- */
+const TOPICS = [
+ {key:"F", name:"Family", qs:[
+  ["Many parents today push their children very hard to achieve success.","Why do parents do this? Is this a positive or a negative development?"],
+  ["Some people believe children are better off growing up in a city, while others feel the countryside offers a more suitable upbringing.","What are the advantages and disadvantages of each place?"],
+  ["In many societies today, grandchildren seldom spend meaningful time with their grandparents.","What do you think the consequences of this are?"],
+  ["Members of different generations within a family now seem to do fewer activities together.","Why is this happening? Is it a positive or a negative development?"],
+  ["Some argue that television is an effective learning tool for children, so they should be encouraged to watch it regularly both at home and at school.","To what extent do you agree or disagree?"],
+  ["Some people believe the main job of parents is to discipline their children and teach them right from wrong. Others feel parents should mainly nurture their children and give them a safe environment to grow up in.","Discuss both views and give your own opinion."],
+  ["In most families today both parents work, so children spend less and less time with them.","Why is this the case? What problems can this cause?"],
+  ["Because nuclear families are small, they can relocate easily.","Do children benefit in any way from moving home? Do the advantages outweigh the disadvantages?"],
+  ["Older people were once valued as a source of knowledge and experience, but today many of them have limited understanding of the modern world.","Has this had a negative effect on how the elderly are treated by society and by their families? What could be done about this situation?"],
+  ["In many western countries, more and more couples are deciding not to have children.","What are the advantages and disadvantages of this choice for couples?"],
+  ["People now commonly live into their nineties and beyond, which is raising concern about care for the elderly.","Should families be responsible for caring for their older relatives, or should this be the government’s responsibility?"],
+  ["Children today enjoy more freedom than earlier generations did.","Is this a positive or a negative development?"],
+  ["The values people learn from their parents and family shape their future success more than any knowledge or skills taught at school.","To what extent do you agree or disagree?"]
+ ]},
+ {key:"D", name:"Food", qs:[
+  ["As the world’s population grows, feeding everyone is becoming one of the most serious challenges we face. Some people believe genetically modified (GM) food is a practical solution.","To what extent do you agree or disagree?"],
+  ["Some people argue that teaching the public about the dangers of eating too much fast food does not work, and that other measures are needed to deal with the problem.","What is your opinion?"],
+  ["People should buy only food that is produced locally.","What are the advantages and disadvantages of this?"],
+  ["Governments should ban convenience food in order to improve public health.","Do you agree or disagree?"],
+  ["Some people think that the rise in obesity should be the government’s responsibility, while others believe individuals are responsible for it.","Discuss both views and give your own opinion."],
+  ["Because the population is growing, many people believe we should concentrate on producing more GM food.","What are the advantages and disadvantages of doing this?"],
+  ["Taxing sugar is an effective way to reduce the health problems caused by consuming too many sugary foods and drinks.","Do you agree or disagree?"],
+  ["A growing number of children are overweight, which may lead to health problems and higher health care costs when they become adults.","Why are so many children overweight? What could be done to solve this problem?"],
+  ["Traditional ways of cooking will soon disappear unless fast food and ready meals are banned.","To what extent do you agree or disagree?"],
+  ["Because of the fast pace of modern life, more and more people rely on fast food for their main meals.","Do the advantages of this outweigh the disadvantages?"],
+  ["Eating meat can cause serious health problems, so everyone should become vegetarian.","Do you agree or disagree?"],
+  ["Many processed foods and ready meals contain preservatives and other chemicals.","What are the advantages of this? Do the advantages outweigh the disadvantages?"],
+  ["For several decades, the media has presented young, thin women as the ideal.","What problems has this caused? What solutions can you suggest?"]
+ ]},
+ {key:"E", name:"Education", qs:[
+  ["Some educators believe that international exchange visits are beneficial for teenagers at school.","To what extent do the advantages outweigh the disadvantages?"],
+  ["Reading, writing and mathematics have been the core of education for centuries. Now that computers are everywhere, some people think computer skills should be added as a fourth core skill.","To what extent do you agree or disagree?"],
+  ["To help a country develop and progress, governments should spend more money on teaching science than on other subjects.","To what extent do you agree or disagree?"],
+  ["Poor discipline is a growing problem in modern schools. Some people think teachers should be responsible for discipline, while others believe it is the role of parents.","Discuss both views and give your own opinion."],
+  ["Some people believe children should not be given homework every day, while others think daily homework is necessary for children to succeed at school.","Discuss both views and give your own opinion."],
+  ["Some children receive almost no encouragement from their parents about their schoolwork, while others are put under excessive pressure by over-enthusiastic parents, which can harm the child.","Why do some parents put too much pressure on their children to do well at school? What should a parent’s role be in their child’s education?"],
+  ["The purpose of education is to prepare children for the modern world, so schools should remove art and music from the curriculum and focus on useful subjects such as information technology.","To what extent do you agree or disagree?"],
+  ["Some people think high school students should not spend time studying literature such as novels and poetry.","Do you agree or disagree?"],
+  ["Some parents feel their children should do educational activities in their free time. Others say this puts children under too much pressure.","Discuss both views and give your own opinion."],
+  ["Some people believe teachers should be allowed to send disruptive pupils out of the classroom.","Is this the best way to deal with a disruptive child? What other solutions are there?"],
+  ["Education should be available to people from every economic background, so all levels of education, from primary school to university, should be free.","To what extent do you agree or disagree?"],
+  ["Schools are increasingly moving away from traditional exams towards continuous assessment throughout the school year.","What is your opinion of this trend?"],
+  ["Some people think that formally educated people are more valuable than those who have gained their skills through experience.","Are educated people the most valuable members of society? What skills learned through experience can benefit society?"],
+  ["Being able to speak a foreign language is a real advantage today. Some people think children should start learning one at primary school, while others think they should begin at secondary school.","Discuss both views and give your own opinion."],
+  ["The gap between the quality of education in rich countries and in poor countries is a growing concern.","What solutions can you suggest to deal with this problem?"],
+  ["Some schools are very strict about uniforms and pupils’ appearance, while others have a relaxed dress code.","What are the advantages and disadvantages of school uniforms for children?"],
+  ["In some high schools, students must do community work, such as helping elderly or disabled people, as part of the curriculum.","How do students benefit from this? Should it be part of the curriculum?"],
+  ["Making after-school activities compulsory is the best way to help underachieving pupils, because they would become more involved in school life and their grades would improve.","To what extent do you agree or disagree?"],
+  ["Some people think schools should spend more money on technology such as computers, while others believe more should be spent on teachers.","Discuss both views and give your own opinion."],
+  ["Some people think parents have the greatest influence on a child’s academic development, while others believe teachers have more influence.","Discuss both views and give your own opinion."],
+  ["In some countries, boys and girls are educated in separate schools rather than in the same school.","What are the advantages and disadvantages of this?"],
+  ["In almost every university science course, there are far more male students than female students.","Why is this the case? What could be done to balance the numbers?"],
+  ["Some people think it is good for older people to learn new things, while others believe that once a person is over 65 it is too late to learn.","What is your opinion?"],
+  ["Some people believe a teacher’s role is to motivate and inspire students, while others think it is mainly to pass on knowledge.","What do you think the role of a teacher should be?"],
+  ["Fewer schools now require children to practise and improve their handwriting.","Do the advantages of this trend outweigh the disadvantages?"]
+ ]},
+ {key:"C", name:"Communication & Personality", qs:[
+  ["Some people do badly at school but go on to be very successful in life.","Why do you think this is the case? What is the most important factor for success in life?"],
+  ["Some people believe that ambition is essential for success.","To what extent do you agree or disagree?"],
+  ["Your first impression of someone is the best way to judge them.","Do you agree or disagree?"],
+  ["Some people welcome change in their lives, while others try to avoid it.","What are the advantages and disadvantages of each approach?"],
+  ["People in previous generations were happier than people are today.","To what extent do you agree or disagree?"],
+  ["Some people think teenagers are happier than adults, while others disagree.","Discuss both views and give your own opinion."],
+  ["Today, celebrities are known more for their glamour and wealth than for their achievements, and this sets a bad example for young people.","To what extent do you agree or disagree?"],
+  ["Some celebrities feel that the media invades their privacy by making their personal lives public, while others accept this as part of being famous.","What is your opinion?"],
+  ["The way a person dresses reveals a great deal about their personality.","To what extent do you agree or disagree?"],
+  ["As more and more people communicate through the internet and text messages, face-to-face communication will disappear.","To what extent do you agree or disagree?"],
+  ["A growing number of businesses and individuals now use technology rather than meeting in person to communicate, both professionally and socially.","Discuss the advantages and disadvantages of communicating through technology."],
+  ["Many young children use the internet without supervision to socialise with others, which can expose them to dangerous situations.","What problems do children face when they go online without parental supervision? How can these problems be solved?"],
+  ["Some people believe online communication is breaking down geographical barriers, allowing people who would never otherwise meet to talk to each other.","What are the advantages of international online communication? Are there any disadvantages?"],
+  ["Thanks to online communication, people will never be lonely and will always be able to make new friends.","To what extent do you agree or disagree?"],
+  ["Text messages and other instant forms of online communication tend to be short and simple. Some people think this will be the end of good grammar and spelling.","Do you agree or disagree?"],
+  ["Some people think intelligence is something we are born with, while others believe it can be developed through learning.","Discuss both views and give your own opinion."],
+  ["Our personality is fixed by our genes before we are born, and nothing can be done to change our character.","To what extent do you agree or disagree?"],
+  ["Many interviews for management positions assess a candidate’s personality as well as their experience and knowledge.","Is leadership an innate ability? What other qualities do companies look for in a manager?"],
+  ["Some people think women are generally more peaceful than men because they are naturally more nurturing and less aggressive.","To what extent do you agree or disagree?"],
+  ["Some people think our first impression of someone is important, while others believe we should take time to get to know a person before judging them.","Discuss both views and give your own opinion."]
+ ]}
+];
+const QUESTIONS = [];
+TOPICS.forEach(t => t.qs.forEach((q,i) => QUESTIONS.push({id:t.key+(i+1), topic:t.name, topicKey:t.key, n:i+1, statement:q[0], ask:q[1]})));
+
+/* ---------- Band criteria (from the uploaded guide) ---------- */
+const CRIT = [
+ {k:"TR", name:"Task Response"},
+ {k:"CC", name:"Coherence and Cohesion"},
+ {k:"LR", name:"Lexical Resource"},
+ {k:"GRA", name:"Grammatical Range and Accuracy"}
+];
+const BANDS = {
+ 9:{TR:"Explores the prompt appropriately and in depth. Presents a clear, fully developed position that directly answers the question(s). Ideas are relevant, fully extended and well supported; lapses are extremely rare.",
+    CC:"The message is effortless to follow. Cohesion rarely attracts attention, lapses are minimal, and paragraphing is skilfully managed.",
+    LR:"Uses a wide vocabulary accurately, appropriately, flexibly and precisely, with natural control of lexical features. Spelling and word-formation errors are extremely rare and have minimal impact.",
+    GRA:"Uses a wide structural range with full flexibility and control. Grammar and punctuation are appropriate throughout. Minor errors are extremely rare and have minimal impact."},
+ 8:{TR:"Addresses the prompt appropriately and sufficiently. Presents a clear, well-developed position. Ideas are relevant, well extended and supported; occasional omissions or content lapses may occur.",
+    CC:"The message is easy to follow. Ideas are logically sequenced, cohesion is well managed, and paragraphing is sufficient and appropriate. Occasional lapses may occur.",
+    LR:"Uses a wide vocabulary fluently and flexibly to express precise meanings. Uses uncommon and/or idiomatic items skilfully where appropriate. Occasional word-choice, collocation, spelling or word-formation errors have minimal impact.",
+    GRA:"Uses a wide range of structures flexibly and accurately. The majority of sentences are error-free, and punctuation is well managed. Occasional non-systematic errors have minimal impact."},
+ 7:{TR:"Appropriately addresses the main parts of the prompt. Presents a clear, developed position. Main ideas are extended and supported, although supporting material may be overgeneralised or lack focus and precision.",
+    CC:"Logically organises ideas with clear progression; any lapses are minor. Uses varied cohesive devices, including reference and substitution, with some inaccuracies or over-/underuse. Paragraphing is generally effective, and sequencing within paragraphs is generally logical.",
+    LR:"Vocabulary permits some flexibility and precision. Shows some ability with less common and/or idiomatic language and awareness of style and collocation, despite occasional inappropriate use. Few spelling or word-formation errors occur and do not reduce overall clarity.",
+    GRA:"Uses varied complex structures with some flexibility and accuracy. Grammar and punctuation are generally controlled; error-free sentences are frequent. A few grammatical errors may persist but do not impede communication."},
+ 6:{TR:"Addresses the main parts of the prompt, but coverage may be uneven. Uses an appropriate format. Presents a directly relevant position, although conclusions may be unclear, unjustified or repetitive. Relevant ideas may lack development or clarity, and some support may be inadequate or less relevant.",
+    CC:"Ideas are generally coherent with clear overall progression. Linking can be mechanical or faulty through misuse, overuse or omission. Reference and substitution may be unclear or repetitive. Paragraphing or central topics may not always be logical or clear.",
+    LR:"Vocabulary is generally adequate and appropriate. Meaning is clear despite restricted range or imprecise word choice. Attempts at a wider range may bring greater inaccuracy. Spelling and word-formation errors do not impede communication.",
+    GRA:"Uses a mixture of simple and complex sentences with limited flexibility. Complex structures are less accurate than simple ones. Grammar and punctuation errors occur but rarely impede communication."},
+ 5:{TR:"Incompletely addresses the main parts of the prompt; format may sometimes be inappropriate. Expresses a position, but development is not always clear. Ideas are limited, insufficiently developed or accompanied by irrelevant detail; repetition may occur.",
+    CC:"Shows organisation and underlying coherence, but sequencing is not wholly logical and overall progression may be weak. Sentences are not fluently linked. Cohesive devices and reference may be limited, inaccurate or repetitive. Paragraphing may be inadequate or absent.",
+    LR:"Vocabulary is limited but minimally adequate. Simple vocabulary may be accurate, but expression lacks variation and flexibility. Word choice may be inappropriate; spelling and word-formation errors may cause difficulty for the reader.",
+    GRA:"Uses a limited, repetitive structural range. Complex sentences are attempted but tend to be faulty; simple sentences are more accurate. Frequent grammatical errors and faulty punctuation may cause difficulty."},
+ 4:{TR:"Addresses the prompt minimally or tangentially, possibly because of misunderstanding. A position can be found only with careful reading. Main ideas are difficult to identify and may lack relevance, clarity or support. Substantial repetition and inappropriate format may occur.",
+    CC:"Ideas are present but not coherently arranged; there is no clear progression. Relationships are unclear or inadequately marked. Basic linking devices may be inaccurate or repetitive; reference/substitution may be missing or inaccurate. Paragraphing or paragraph topics may be absent.",
+    LR:"Vocabulary is limited and inadequate for, or unrelated to, the task. Basic words may be repeated. Memorised or formulaic chunks may be inappropriate. Word-choice, spelling and word-formation errors may obstruct meaning.",
+    GRA:"Uses a very limited structural range, mainly simple sentences, with few subordinate clauses. Some structures are accurate, but frequent grammatical errors may obstruct meaning. Punctuation is often faulty or inadequate."},
+ 3:{TR:"Does not adequately address any part of the prompt, or misunderstands it. No relevant position is identifiable and/or there is little direct response. Ideas are few and may be irrelevant or insufficiently developed.",
+    CC:"No apparent logical organisation. Ideas are discernible but difficult to relate. Linking devices are minimal or fail to show logical relationships; reference is difficult to identify. Paragraphing attempts are unhelpful.",
+    LR:"Vocabulary is inadequate, possibly because the response is substantially underlength. May rely excessively on memorised or copied language. Word-choice and spelling errors dominate and may severely obstruct meaning.",
+    GRA:"Attempts sentence forms, but grammar and punctuation errors dominate and prevent most meaning from coming through. The response may be too short to show control of sentence forms."},
+ 2:{TR:"Content is barely related to the prompt. No position is identifiable. One or two undeveloped ideas may appear.",
+    CC:"Communicates little relevant information, or the entire response may be off-topic. Shows little control of organisation.",
+    LR:"Vocabulary is extremely limited, with few recognisable strings outside memorised phrases. No apparent control of word formation or spelling.",
+    GRA:"Little or no evidence of sentence forms, except in memorised phrases."},
+ 1:{TR:"Content is wholly unrelated to the prompt. Copied instructions are discounted. Responses of 20 words or fewer are rated Band 1.",
+    CC:"Fails to communicate a message. Responses of 20 words or fewer are rated Band 1.",
+    LR:"No vocabulary resource is apparent beyond a few isolated words. Responses of 20 words or fewer are rated Band 1.",
+    GRA:"No rateable language is evident. Responses of 20 words or fewer are rated Band 1."},
+ 0:{TR:"Did not attend or attempt the question, wrote entirely in a language other than English, or the answer is proven to be totally memorised.",
+    CC:"As above (Band 0 conditions).", LR:"As above (Band 0 conditions).", GRA:"As above (Band 0 conditions)."}
+};
+
+/* ---------- Storage helpers (per-viewer) ---------- */
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem("ielts2:"+k); return v==null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem("ielts2:"+k, JSON.stringify(v)); }catch(e){} }
+};
+
+/* ---------- State ---------- */
+const $ = id => document.getElementById(id);
+let activeTopic = store.get("topic", "F");
+let current = QUESTIONS.find(q => q.id === store.get("current","F1")) || QUESTIONS[0];
+let results = store.get("results", {});   // id -> last result
+let timer = {left:40*60, running:false, h:null, used:0};
+
+$("cand").value = store.get("cand","");
+$("cand").addEventListener("input", e => store.set("cand", e.target.value));
+
+/* ---------- Index ---------- */
+function renderTopics(){
+  const box = $("topics"); box.innerHTML = "";
+  TOPICS.forEach(t => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = t.name;
+    b.setAttribute("aria-pressed", String(t.key === activeTopic));
+    b.onclick = () => { activeTopic = t.key; store.set("topic", activeTopic); renderTopics(); renderList(); };
+    box.appendChild(b);
+  });
+}
+function renderList(){
+  const list = $("qlist"); list.innerHTML = "";
+  const qs = QUESTIONS.filter(q => q.topicKey === activeTopic);
+  $("qcount").textContent = qs.length + " questions";
+  qs.forEach(q => {
+    const li = document.createElement("li");
+    const b = document.createElement("button"); b.type="button";
+    if (q.id === current.id) b.setAttribute("aria-current","true");
+    const id = document.createElement("span"); id.className="qid"; id.textContent = q.id;
+    const tx = document.createElement("span"); tx.className="qtext"; tx.textContent = q.statement;
+    const dn = document.createElement("span"); dn.className="done";
+    if (results[q.id]) { dn.textContent = fmtBand(results[q.id].overall); dn.title = "Last marked band"; }
+    b.append(id, tx, dn);
+    b.onclick = () => selectQuestion(q.id, true);
+    li.appendChild(b); list.appendChild(li);
+  });
+}
+$("randomBtn").onclick = () => {
+  const pool = QUESTIONS.filter(q => q.id !== current.id);
+  const q = pool[Math.floor(Math.random()*pool.length)];
+  activeTopic = q.topicKey; store.set("topic", activeTopic); renderTopics();
+  selectQuestion(q.id, true);
+};
+
+/* ---------- Question view ---------- */
+function selectQuestion(id, scroll){
+  saveDraft();
+  current = QUESTIONS.find(q => q.id === id);
+  store.set("current", id);
+  $("qTitle").textContent = "Question " + current.id;
+  $("qTopic").textContent = "IELTS Writing Task 2  •  " + current.topic;
+  const p = $("prompt"); p.innerHTML = "";
+  p.append(el("span","tag","Practice"));
+  const s = document.createElement("p"); s.textContent = current.statement;
+  const a = document.createElement("p"); a.className="ask"; a.textContent = current.ask;
+  p.append(s,a);
+  $("essay").value = store.get("draft:"+id, "");
+  updateWC();
+  resetTimer();
+  $("marking").classList.add("hidden"); $("marking").innerHTML = "";
+  if (results[id]) renderResult(results[id]);
+  renderList(); resetManual();
+  if (window.matchMedia("(max-width:860px)").matches) $("indexDetails").open = false;
+  if (scroll) document.querySelector(".paper").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto":"smooth", block:"start"});
+}
+
+/* ---------- Writing ---------- */
+function countWords(t){ const m = t.trim().match(/[A-Za-z0-9\u00C0-\u024F'’-]+/g); return m ? m.length : 0; }
+function updateWC(){
+  const n = countWords($("essay").value);
+  $("wcNum").textContent = n;
+  $("wc").classList.toggle("under", n > 0 && n < 250);
+  $("wc").lastChild.textContent = n < 250 && n > 0 ? " words (" + (250-n) + " to go)" : " words";
+}
+let saveT;
+function saveDraft(){ if (current) store.set("draft:"+current.id, $("essay").value); }
+$("essay").addEventListener("input", () => {
+  updateWC();
+  if (!timer.running && timer.left === 40*60 && $("essay").value.trim()) startTimer();
+  clearTimeout(saveT); saveT = setTimeout(saveDraft, 400);
+});
+
+/* ---------- Timer ---------- */
+function fmtTime(s){ const neg = s<0; s=Math.abs(s); return (neg?"−":"")+String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0"); }
+function paintClock(){ $("clock").textContent = fmtTime(timer.left); $("clock").classList.toggle("low", timer.left <= 300); }
+function startTimer(){
+  if (timer.running) return;
+  timer.running = true; $("timerBtn").textContent = "Pause";
+  timer.h = setInterval(() => { timer.left--; timer.used++; paintClock(); }, 1000);
+}
+function pauseTimer(){ timer.running=false; clearInterval(timer.h); $("timerBtn").textContent = "Resume"; }
+function resetTimer(){ pauseTimer(); timer.left=40*60; timer.used=0; $("timerBtn").textContent="Start timer"; paintClock(); }
+$("timerBtn").onclick = () => timer.running ? pauseTimer() : startTimer();
+$("resetBtn").onclick = resetTimer;
+
+/* ---------- Scoring helpers ---------- */
+function roundBand(x){ const f = Math.floor(x), r = x - f; return r < .25 ? f : r < .75 ? f + .5 : f + 1; }
+function fmtBand(b){ return Number.isInteger(b) ? b + ".0" : String(b); }
+function clampBand(b){ b = Math.round(Number(b)); return isNaN(b) ? 0 : Math.max(0, Math.min(9, b)); }
+
+function descriptorText(){
+  let s = "";
+  for (let b = 9; b >= 1; b--) {
+    s += "BAND " + b + "\n";
+    CRIT.forEach(c => s += "- " + c.name + ": " + BANDS[b][c.k] + "\n");
+  }
+  s += "BAND 0: candidate did not attempt the question in any way, wrote entirely in a language other than English, or there is proof the answer was totally memorised (not merely familiar phrases).\n";
+  return s;
+}
+
+function buildPrompt(q, essay, wc){
+  return `You are a senior, well-calibrated IELTS Writing examiner. Mark the candidate's IELTS Writing Task 2 essay below using ONLY the band criteria provided (paraphrased from the official IELTS Writing Task 2 band descriptors, May 2023).
+
+MARKING RULES
+- Rate each of the four criteria independently with a WHOLE band from 0 to 9. Each carries 25%.
+- To award a band, the script must fully fit the positive features of that band; negative features limit the rating.
+- Be honest and strict, as a real examiner would be. Do not inflate scores to be encouraging.
+- Task Response: check every part of the question is answered, the position is clear and consistent, and ideas are developed and supported. Responses under 250 words are underlength and should be penalised in Task Response. Wording copied from the question is discounted.
+- Lexical Resource and Grammatical Range and Accuracy: judge range AND accuracy; frequency and impact of errors matter.
+- Off-topic or memorised content must be marked down accordingly.
+- Write feedback in clear, plain English addressed to the candidate ("you").
+
+BAND CRITERIA
+${descriptorText()}
+QUESTION
+${q.statement}
+${q.ask}
+
+CANDIDATE ESSAY (${wc} words)
+<<<
+${essay}
+>>>
+
+Respond with ONLY a JSON object, no markdown fences, in exactly this shape:
+{
+  "band0": false,
+  "band0_reason": "",
+  "position": "one sentence stating the position the candidate takes, or 'No clear position'",
+  "criteria": {
+    "TR":  {"band": 0, "summary": "2-3 sentences justifying the band against the descriptors", "strengths": ["..."], "improvements": ["..."]},
+    "CC":  {"band": 0, "summary": "...", "strengths": ["..."], "improvements": ["..."]},
+    "LR":  {"band": 0, "summary": "...", "strengths": ["..."], "improvements": ["..."]},
+    "GRA": {"band": 0, "summary": "...", "strengths": ["..."], "improvements": ["..."]}
+  },
+  "corrections": [{"original": "exact short excerpt from the essay", "suggestion": "corrected version", "note": "brief reason"}],
+  "overall_feedback": "3-4 sentences on the essay as a whole",
+  "next_steps": ["three concrete, specific actions to reach the next band"]
+}
+Give 1-3 strengths and 1-3 improvements per criterion, and up to 8 of the most important corrections (grammar, vocabulary, spelling, punctuation). If band0 is true, set all four bands to 0.`;
+}
+
+/* ---------- Marking ---------- */
+let samplePromise = (window.claude && claude.use) ? claude.use("sample") : Promise.resolve(null);
+let busy = false;
+
+$("gradeBtn").onclick = async () => {
+  if (busy) return;
+  const essay = $("essay").value.trim();
+  const wc = countWords(essay);
+  const box = $("marking");
+  box.classList.remove("hidden"); box.innerHTML = "";
+  if (!essay) { box.innerHTML = '<p class="err">Write your essay in the answer sheet first, then submit it for marking.</p>'; return; }
+  saveDraft();
+  if (timer.running) pauseTimer();
+
+  if (wc <= 20) {
+    const crit = {}; CRIT.forEach(c => crit[c.k] = {band:1, summary:"Responses of 20 words or fewer are rated Band 1 on every criterion.", strengths:[], improvements:["Write a complete essay of at least 250 words."]});
+    finish({band0:false, position:"No clear position", criteria:crit, corrections:[], overall_feedback:"The response is 20 words or fewer, so it receives Band 1 on all four criteria under the descriptors.", next_steps:["Plan four paragraphs: introduction, two body paragraphs and a conclusion.","Aim for 260–290 words.","Answer every part of the question."]}, essay, wc);
+    return;
+  }
+
+  const sample = await samplePromise;
+  if (!sample) {
+    box.innerHTML = '<p class="err">Automatic marking is available when this page is opened in Claude.</p><p>You can still mark the essay yourself with the band selectors below.</p>';
+    $("manual").open = true; return;
+  }
+
+  busy = true; $("gradeBtn").disabled = true;
+  const status = document.createElement("div"); status.className = "status";
+  status.innerHTML = '<div class="spinner" aria-hidden="true"></div><span id="statusText">The examiner is reading your essay…</span>';
+  box.appendChild(status);
+  let secs = 0; const tick = setInterval(() => { secs++; const st=$("statusText"); if (st) st.textContent = "The examiner is reading your essay… " + secs + "s"; }, 1000);
+
+  try {
+    const data = await sample.json(buildPrompt(current, essay, wc), {modelTier:"complex", cache:false});
+    clearInterval(tick);
+    if (!data || !data.criteria) throw {code:"bad_output"};
+    finish(data, essay, wc);
+  } catch (e) {
+    clearInterval(tick);
+    box.innerHTML = "";
+    const p = document.createElement("p"); p.className = "err";
+    const msgs = {
+      not_granted: "Marking needs your permission to use Claude. Allow it when asked, or mark the essay yourself below.",
+      rate_limited: "Too many marking requests at once. Wait a minute, then submit again.",
+      cancelled: "Marking was stopped.",
+      bad_output: "The marking came back incomplete. Submit again to retry."
+    };
+    p.textContent = msgs[e && e.code] || "Marking could not be completed (" + ((e && e.code) || "error") + "). Submit again to retry.";
+    box.appendChild(p);
+  } finally {
+    busy = false; $("gradeBtn").disabled = false;
+  }
+};
+
+function finish(data, essay, wc){
+  const crit = {};
+  CRIT.forEach(c => {
+    const d = (data.criteria && data.criteria[c.k]) || {};
+    crit[c.k] = {
+      band: data.band0 ? 0 : clampBand(d.band),
+      summary: String(d.summary || ""),
+      strengths: Array.isArray(d.strengths) ? d.strengths.map(String) : [],
+      improvements: Array.isArray(d.improvements) ? d.improvements.map(String) : []
+    };
+  });
+  const avg = CRIT.reduce((s,c) => s + crit[c.k].band, 0) / 4;
+  const res = {
+    id: current.id, question: current.statement + " " + current.ask,
+    candidate: $("cand").value.trim(), date: new Date().toISOString(),
+    words: wc, timeUsed: timer.used, essay,
+    band0: !!data.band0, band0_reason: String(data.band0_reason || ""),
+    position: String(data.position || ""),
+    criteria: crit, overall: roundBand(avg), average: avg,
+    corrections: Array.isArray(data.corrections) ? data.corrections.slice(0,8) : [],
+    overall_feedback: String(data.overall_feedback || ""),
+    next_steps: Array.isArray(data.next_steps) ? data.next_steps.map(String) : []
+  };
+  results[current.id] = res; store.set("results", results);
+  renderResult(res); renderList();
+}
+
+/* ---------- Result rendering ---------- */
+function el(tag, cls, text){ const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+function renderResult(r){
+  const box = $("marking"); box.classList.remove("hidden"); box.innerHTML = "";
+
+  const v = el("div","verdict");
+  const stamp = el("div","stamp");
+  const lbl = el("span","lbl"); lbl.append(el("b", null, "Overall band"), document.createTextNode("Average of four criteria"));
+  stamp.append(el("span","num", fmtBand(r.overall)), lbl);
+  const vt = el("div");
+  vt.append(el("h3", null, "Task 2 band " + fmtBand(r.overall)));
+  vt.append(el("p", null, r.overall_feedback));
+  const meta = [r.candidate || "Candidate", r.words + " words", r.timeUsed ? "time used " + fmtTime(r.timeUsed) : null, new Date(r.date).toLocaleString()].filter(Boolean).join(", ");
+  vt.append(el("p","meta", meta + ". Average of criteria " + r.average.toFixed(2) + ", rounded to the nearest half band."));
+  if (r.position) vt.append(el("p","meta","Position identified: " + r.position));
+  if (r.band0) vt.append(el("p","err","Band 0: " + r.band0_reason));
+  v.append(stamp, vt); box.appendChild(v);
+
+  const grid = el("div","crit-grid"); box.appendChild(grid);
+  CRIT.forEach((c, i) => {
+    const d = r.criteria[c.k];
+    const row = el("div", (i === 0 || i === 3) ? "crit dark" : "crit");
+    const head = el("div","head");
+    const b = el("div","b", String(d.band));
+    const h = el("h4"); h.append(el("small", null, c.k + "  •  25%"), document.createTextNode(c.name));
+    head.append(b, h);
+    const body = el("div");
+    if (d.summary) body.append(el("p", null, d.summary));
+    const cols = el("div","cols");
+    [["What worked", d.strengths], ["To improve", d.improvements]].forEach(([h, arr]) => {
+      if (!arr.length) return;
+      const col = el("div"); col.append(el("h5", null, h));
+      const ul = el("ul"); arr.forEach(x => ul.append(el("li", null, x))); col.append(ul); cols.append(col);
+    });
+    body.append(cols);
+    const det = el("details"); det.append(el("summary", null, "Band " + d.band + " descriptor"));
+    det.append(el("p", null, BANDS[d.band][c.k]));
+    if (d.band < 9) { det.append(el("p", null, "Band " + (d.band+1) + ": " + BANDS[d.band+1][c.k])); }
+    body.append(det);
+    row.append(head, body); grid.appendChild(row);
+  });
+
+  if (r.corrections.length) {
+    const f = el("div","fixes"); f.append(el("h4", null, "Corrections"));
+    r.corrections.forEach(c => {
+      const x = el("div","fix");
+      x.append(el("span","o", String(c.original||"")), document.createTextNode("  "), el("span","s", String(c.suggestion||"")));
+      if (c.note) x.append(el("span","n", String(c.note)));
+      f.append(x);
+    });
+    box.appendChild(f);
+  }
+  if (r.next_steps.length) {
+    const n = el("div","next"); n.append(el("h4", null, "Next steps"));
+    const ol = el("ol"); r.next_steps.forEach(s => ol.append(el("li", null, s))); n.append(ol);
+    box.appendChild(n);
+  }
+
+  const acts = el("div","actions");
+  const dl = el("button","btn","Download report"); dl.type="button";
+  dl.onclick = () => downloadReport(r, dl);
+  const again = el("button","btn","Mark again"); again.type="button";
+  again.onclick = () => $("gradeBtn").click();
+  acts.append(dl, again); box.appendChild(acts);
+  box.appendChild(el("p","disclaimer","Marked by Claude against the band descriptors in your guide. This is a practice estimate, not an official IELTS score."));
+}
+
+/* ---------- Report download ---------- */
+let dlPromise = (window.claude && claude.use) ? claude.use("downloads") : Promise.resolve(null);
+async function downloadReport(r, btn){
+  const L = [];
+  L.push("# IELTS Writing Task 2 report", "");
+  L.push("Candidate: " + (r.candidate || "—"));
+  L.push("Question " + r.id + ": " + r.question);
+  L.push("Date: " + new Date(r.date).toLocaleString());
+  L.push("Words: " + r.words + (r.timeUsed ? "  |  Time used: " + fmtTime(r.timeUsed) : ""), "");
+  L.push("## Overall band: " + fmtBand(r.overall) + " (average " + r.average.toFixed(2) + ")", "");
+  if (r.overall_feedback) L.push(r.overall_feedback, "");
+  CRIT.forEach(c => {
+    const d = r.criteria[c.k];
+    L.push("### " + c.name + ": Band " + d.band, d.summary, "");
+    if (d.strengths.length) { L.push("What worked:"); d.strengths.forEach(s => L.push("- " + s)); L.push(""); }
+    if (d.improvements.length) { L.push("To improve:"); d.improvements.forEach(s => L.push("- " + s)); L.push(""); }
+  });
+  if (r.corrections.length) { L.push("## Corrections"); r.corrections.forEach(c => L.push("- " + c.original + " → " + c.suggestion + (c.note ? " (" + c.note + ")" : ""))); L.push(""); }
+  if (r.next_steps.length) { L.push("## Next steps"); r.next_steps.forEach((s,i) => L.push((i+1) + ". " + s)); L.push(""); }
+  L.push("## Essay", "", r.essay, "");
+  const text = L.join("\n");
+  const name = "IELTS-Task2-" + r.id + "-" + (r.candidate || "candidate").replace(/[^A-Za-z0-9]+/g,"-") + ".md";
+  const dlc = await dlPromise;
+  if (!dlc) {
+    try { await navigator.clipboard.writeText(text); btn.textContent = "Report copied to clipboard"; } catch(e) { btn.textContent = "Download unavailable here"; }
+    return;
+  }
+  try { await dlc.save({filename:name, data:text}); }
+  catch(e) { if (e && e.code !== "declined") btn.textContent = "Download unavailable here"; }
+}
+
+/* ---------- Manual marking ---------- */
+function resetManual(){
+  const g = $("manualGrid"); g.innerHTML = "";
+  CRIT.forEach(c => {
+    const w = el("div"); const id = "m_" + c.k;
+    const lab = el("label", null, c.name); lab.htmlFor = id;
+    const s = el("select"); s.id = id;
+    s.append(new Option("—", ""));
+    for (let b = 9; b >= 0; b--) s.append(new Option("Band " + b, b));
+    s.onchange = calcManual;
+    const hint = el("p","disclaimer"); hint.id = id + "_h"; hint.style.marginTop = "6px";
+    w.append(lab, s, hint); g.append(w);
+  });
+  $("manualRes").textContent = "";
+}
+function calcManual(){
+  let sum = 0, n = 0;
+  CRIT.forEach(c => {
+    const v = $("m_"+c.k).value;
+    $("m_"+c.k+"_h").textContent = v === "" ? "" : BANDS[v][c.k];
+    if (v !== "") { sum += Number(v); n++; }
+  });
+  $("manualRes").textContent = n === 4 ? "Overall Task 2 band: " + fmtBand(roundBand(sum/4)) + " (average " + (sum/4).toFixed(2) + ")" : n ? "Choose a band for all four criteria." : "";
+}
+
+/* ---------- Reference table ---------- */
+(function(){
+  const t = $("refTable");
+  const head = el("tr"); head.append(el("th", null, "Band")); CRIT.forEach(c => head.append(el("th", null, c.name)));
+  t.append(head);
+  for (let b = 9; b >= 1; b--) {
+    const tr = el("tr"); tr.append(el("td", null, String(b)));
+    CRIT.forEach(c => tr.append(el("td", null, BANDS[b][c.k]))); t.append(tr);
+  }
+})();
+
+/* ---------- Init ---------- */
+activeTopic = current.topicKey;
+renderTopics();
+selectQuestion(current.id, false);
+if (window.matchMedia("(max-width:860px)").matches) $("indexDetails").open = false;
+window.addEventListener("beforeunload", saveDraft);
+</script>
+</body>
+</html>
